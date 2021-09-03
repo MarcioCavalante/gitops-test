@@ -17,6 +17,8 @@ spec:
           value: "istio-operator"
         - name: watchedNamespaces
           value: "istio-system"
+        - name: enableCRDTemplates
+          value: true
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-operator
