@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/MarcioCavalante/gitops-test.git
+    repoURL: https://github.com/istio/istio.git
     targetRevision: HEAD
-    path: env/production/waves/1/crd-istio-operator
+    path: manifests/charts/istio-operator/crds
     directory:
       recurse: false
   destination:
