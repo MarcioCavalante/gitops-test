@@ -33,3 +33,21 @@ spec:
   selector:
     app: istio-ingressgateway
   type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-ingress-nginx-ingress
+  namespace: istio-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+    nodePort: 30003
+  selector:
+    app: nginx-ingress-nginx-ingress
+  type: NodePort
