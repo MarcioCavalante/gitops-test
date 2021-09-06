@@ -9,3 +9,8 @@ metadata:
   name: default
   labels:
     istio-injection: enabled
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: istio-operator
