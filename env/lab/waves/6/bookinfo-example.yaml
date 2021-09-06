@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  project: default
+  project: bookinfo-example
   source:
     repoURL: https://github.com/MarcioCavalante/bookinfo-example.git
     targetRevision: HEAD
