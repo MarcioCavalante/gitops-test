@@ -8,13 +8,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/istio/istio.git
+    repoURL: https://github.com/MarcioCavalante/gitops-test.git
     targetRevision: HEAD
-    path: manifests/charts/istio-operator
+    path: files/helm-charts/helm-istio-operator/istio-1.11.1/manifests/charts/
     helm:
       parameters:
-        - name: operatorNamespace
-          value: "istio-operator"
         - name: watchedNamespaces
           value: "istio-system"
   destination:
