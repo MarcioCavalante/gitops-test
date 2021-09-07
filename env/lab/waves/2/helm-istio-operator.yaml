@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/MarcioCavalante/gitops-test.git
     targetRevision: HEAD
-    path: files/helm-charts/helm-istio-operator/istio-1.11.1/manifests/charts/
+    path: files/helm-charts/helm-istio-operator/istio-1.11.1/manifests/charts/istio-operator/
     helm:
       parameters:
         - name: watchedNamespaces
