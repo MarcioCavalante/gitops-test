@@ -8,9 +8,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/istio/istio.git
+    repoURL: https://github.com/MarcioCavalante/gitops-test.git
     targetRevision: HEAD
-    path: samples/addons
+    path: files/manifests/istio-addons
     directory:
       recurse: false
   destination:
