@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/MarcioCavalante/bookinfo-example.git
     targetRevision: HEAD
-    path: /manifests
+    path: manifests/
   destination:
     server: https://kubernetes.default.svc
     namespace: default
