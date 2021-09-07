@@ -11,8 +11,6 @@ spec:
     repoURL: https://github.com/MarcioCavalante/gitops-test.git
     targetRevision: HEAD
     path: files/manifests/istio-addons
-    directory:
-      recurse: false
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-system
