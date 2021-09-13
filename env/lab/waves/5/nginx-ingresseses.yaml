@@ -84,3 +84,25 @@ spec:
               number: 3000
         path: /
         pathType: Prefix
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    argocd.argoproj.io/sync-wave: "5"
+  name: argocd-server
+  name: tracing
+  namespace: istio-system
+spec:
+  rules:
+  - host: jaeger.lab.example.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: tracing
+            port:
+              number: 80
+        path: /
+        pathType: Prefix
